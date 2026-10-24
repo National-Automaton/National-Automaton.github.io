@@ -439,30 +439,30 @@ h2 {
   max-width: 42rem;
 }
 
-/* Spend Sentinel */
+/* Spend Automaton */
 
-.sentinel {
+.spend-automaton {
   background: var(--navy);
   color: var(--paper);
   border-top: 0;
 }
 
-.sentinel h2,
-.sentinel .plate-title {
+.spend-automaton h2,
+.spend-automaton .plate-title {
   color: var(--paper);
 }
 
-.sentinel .kicker,
-.sentinel .spec dt {
+.spend-automaton .kicker,
+.spend-automaton .spec dt {
   color: var(--brass-bright);
 }
 
-.sentinel .lede,
-.sentinel .spec dd {
+.spend-automaton .lede,
+.spend-automaton .spec dd {
   color: var(--paper);
 }
 
-.sentinel-grid {
+.spend-automaton-grid {
   display: grid;
   gap: 2rem;
   align-items: start;
@@ -715,7 +715,7 @@ h2 {
     gap: 1.75rem;
   }
 
-  .sentinel-grid {
+  .spend-automaton-grid {
     grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
     gap: 3.25rem;
     align-items: center;
@@ -774,16 +774,16 @@ h2 {
     display: none;
   }
 
-  .sentinel,
+  .spend-automaton,
   .site-footer,
   .mast {
     background: white;
     color: black;
   }
 
-  .sentinel h2,
-  .sentinel .lede,
-  .sentinel .spec dd,
+  .spend-automaton h2,
+  .spend-automaton .lede,
+  .spend-automaton .spec dd,
   .footer-name,
   .footer-links a {
     color: black;

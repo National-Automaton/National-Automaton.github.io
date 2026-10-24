@@ -1,6 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img">
   <title>National Automaton</title>
-  <rect width="32" height="32" fill="#13263A"/>
-  <rect x="3" y="3" width="26" height="26" fill="none" stroke="#C6A15E" stroke-width="1"/>
-  <path fill="#F4F0E6" d="M10 22.5V9.5h2.4l7.2 9.4V9.5H22v13h-2.4l-7.2-9.4v9.4H10z"/>
+  <rect width="64" height="64" fill="#000000"/>
+  <g fill="none" stroke="#e6c36a" stroke-width="1.15" stroke-linecap="square">
+    <path d="M4 7h56M4 17h56M4 27h56M4 37h56M4 47h56M4 57h56"/>
+    <path d="M7 4v56M17 4v56M27 4v56M37 4v56M47 4v56M57 4v56"/>
+  </g>
+  <g fill="#000000" stroke="#f0d48a" stroke-width="1.55">
+    <circle cx="7" cy="7" r="2.35"/>
+    <circle cx="17" cy="7" r="2.35"/>
+    <circle cx="27" cy="7" r="2.35"/>
+    <circle cx="37" cy="7" r="2.35"/>
+    <circle cx="47" cy="7" r="2.35"/>
+    <circle cx="57" cy="7" r="2.35"/>
+    <circle cx="7" cy="17" r="2.35"/>
+    <circle cx="17" cy="17" r="2.35"/>
+    <circle cx="27" cy="17" r="2.35"/>
+    <circle cx="37" cy="17" r="2.35"/>
+    <circle cx="47" cy="17" r="2.35"/>
+    <circle cx="57" cy="17" r="2.35"/>
+    <circle cx="7" cy="27" r="2.35"/>
+    <circle cx="17" cy="27" r="2.35"/>
+    <circle cx="27" cy="27" r="2.35"/>
+    <circle cx="37" cy="27" r="2.35"/>
+    <circle cx="47" cy="27" r="2.35"/>
+    <circle cx="57" cy="27" r="2.35"/>
+    <circle cx="7" cy="37" r="2.35"/>
+    <circle cx="17" cy="37" r="2.35"/>
+    <circle cx="27" cy="37" r="2.35"/>
+    <circle cx="37" cy="37" r="2.35"/>
+    <circle cx="47" cy="37" r="2.35"/>
+    <circle cx="57" cy="37" r="2.35"/>
+    <circle cx="7" cy="47" r="2.35"/>
+    <circle cx="17" cy="47" r="2.35"/>
+    <circle cx="27" cy="47" r="2.35"/>
+    <circle cx="37" cy="47" r="2.35"/>
+    <circle cx="47" cy="47" r="2.35"/>
+    <circle cx="57" cy="47" r="2.35"/>
+    <circle cx="7" cy="57" r="2.35"/>
+    <circle cx="17" cy="57" r="2.35"/>
+    <circle cx="27" cy="57" r="2.35"/>
+    <circle cx="37" cy="57" r="2.35"/>
+    <circle cx="47" cy="57" r="2.35"/>
+    <circle cx="57" cy="57" r="2.35"/>
+  </g>
 </svg>

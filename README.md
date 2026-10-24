@@ -87,10 +87,13 @@ Forward `nationalautomaton.ai` (and `www.nationalautomaton.ai`, if you use it) t
 | `index.html` | The page |
 | `styles.css` | Layout and type |
 | `404.html` | Unknown paths on GitHub Pages |
-| `favicon.svg` | Tab icon |
-| `favicon.ico` | Fallback icon |
-| `apple-touch-icon.png` | Home-screen icon |
-| `og.png` | Social preview image (1200×630) |
+| `favicon.svg` | Crisp gold-on-black grid icon |
+| `assets/favicon-32.png`, `favicon.ico` | Favicon cropped from the core-memory grid |
+| `apple-touch-icon.png` | Home-screen icon from the same grid |
+| `og.jpg` | Social preview: the logo on black (1200×630) |
+| `assets/logo.jpg` | Optimized logo lockup |
+| `assets/logo-web.jpg` | Smaller logo used in the hero |
+| `assets/mark.png` | Core-memory grid, used in the header |
 | `CNAME` | GitHub Pages hostname: `nationalautomaton.com` |
 | `fonts/` | OFL-licensed webfonts (Fraunces, Source Sans 3) |
 

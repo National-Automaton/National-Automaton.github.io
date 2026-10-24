@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img">
+  <title>National Automaton</title>
+  <rect width="32" height="32" fill="#13263A"/>
+  <rect x="3" y="3" width="26" height="26" fill="none" stroke="#C6A15E" stroke-width="1"/>
+  <path fill="#F4F0E6" d="M10 22.5V9.5h2.4l7.2 9.4V9.5H22v13h-2.4l-7.2-9.4v9.4H10z"/>
+</svg>

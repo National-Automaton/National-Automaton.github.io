@@ -76,6 +76,12 @@ The answers should be the addresses above.
 
 Forward `nationalautomaton.ai` (and `www.nationalautomaton.ai`, if you use it) to `https://nationalautomaton.com` at the registrar or DNS host. A redirect there keeps a single site and a single canonical URL.
 
+## Product sections
+
+`index.html` has a section per product, in the order they appear and are anchored in the nav: `#code-automaton`, then `#spend-automaton`. Both are also linked from `404.html`, so add or rename an anchor in both files.
+
+The Code Automaton section states facts that live outside this repository (npm package name `code-automaton`, command `coda`, version, MIT license). When a release bumps the version, update the `Version` row in the `.spec` list and `softwareVersion` in the JSON-LD together. `npm view code-automaton version` is the authority; the top-level registry document can lag, so prefer the per-version endpoint.
+
 ## Contact address
 
 The site uses `info@nationalautomaton.com`. It appears in three places in `index.html`: the JSON-LD `email` field, the contact mailto, and the footer mailto. Update all three together if the address changes.

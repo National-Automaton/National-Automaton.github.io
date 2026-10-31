@@ -78,7 +78,7 @@ Forward `nationalautomaton.ai` (and `www.nationalautomaton.ai`, if you use it) t
 
 ## Contact address
 
-`hello@nationalautomaton.com` is a placeholder. Search the source for `TODO` and replace it before relying on the link. It appears in the contact mailto, the footer mailto, and the JSON-LD `email` field.
+The site uses `info@nationalautomaton.com`. It appears in three places in `index.html`: the JSON-LD `email` field, the contact mailto, and the footer mailto. Update all three together if the address changes.
 
 ## Files
 

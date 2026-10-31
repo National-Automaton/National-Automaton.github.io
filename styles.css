@@ -509,6 +509,83 @@ h2 {
   max-width: 42rem;
 }
 
+/* Code Automaton */
+
+.code-automaton-grid {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+
+.code-automaton .install {
+  margin-top: 1.75rem;
+  max-width: 32rem;
+}
+
+.install-label {
+  margin: 0 0 0.5rem;
+  color: var(--brass);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.code-automaton pre {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  background: var(--black);
+  border: 1px solid rgba(198, 161, 94, 0.75);
+  color: var(--brass-bright);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.code-automaton pre code {
+  font: inherit;
+}
+
+.install-note {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.install-note code,
+.code-cards code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.92em;
+  background: rgba(124, 94, 42, 0.1);
+  border: 1px solid rgba(124, 94, 42, 0.22);
+  padding: 0.05em 0.32em;
+}
+
+.code-cards {
+  margin-top: 2.25rem;
+}
+
+.code-automaton .spec {
+  border-color: var(--brass-line);
+}
+
+.code-automaton .spec-inner {
+  border-color: var(--brass-line);
+}
+
+.code-automaton .spec-inner > div {
+  border-top-color: var(--line);
+}
+
+.code-automaton .spec dt {
+  color: var(--brass);
+}
+
+.code-automaton .spec dd {
+  color: var(--ink);
+}
+
 /* Spend Automaton */
 
 .spend-automaton {
@@ -786,7 +863,8 @@ h2 {
     gap: 1.75rem;
   }
 
-  .spend-automaton-grid {
+  .spend-automaton-grid,
+  .code-automaton-grid {
     grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
     gap: 3.25rem;
     align-items: center;
@@ -835,7 +913,8 @@ h2 {
   .plate,
   .letter,
   .spec,
-  .split article {
+  .split article,
+  .code-automaton pre {
     border: 1px solid ButtonText;
   }
 }
@@ -853,7 +932,8 @@ h2 {
 
   .spend-automaton,
   .site-footer,
-  .mast {
+  .mast,
+  .code-automaton pre {
     background: white;
     color: black;
   }

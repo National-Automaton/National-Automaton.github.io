@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>National Automaton — Dependable automatons for the modern enterprise</title>
-    <meta name="description" content="Production AI agents for the enterprise, with guardrails, human approval, and audit trails. Spend Automaton, an AI FinOps agent, is coming soon.">
+    <meta name="description" content="Production AI agents for the enterprise, with guardrails, human approval, and audit trails. Code Automaton, an open-source coding agent for the terminal, is released. Spend Automaton is coming soon.">
     <meta name="theme-color" content="#000000">
     <meta name="color-scheme" content="light">
     <link rel="canonical" href="https://nationalautomaton.com/">
@@ -13,7 +13,7 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://nationalautomaton.com/">
     <meta property="og:title" content="National Automaton — Dependable automatons for the modern enterprise">
-    <meta property="og:description" content="Production AI agents for the enterprise, with guardrails, human approval, and audit trails. Spend Automaton, an AI FinOps agent, is coming soon.">
+    <meta property="og:description" content="Production AI agents for the enterprise, with guardrails, human approval, and audit trails. Code Automaton, an open-source coding agent for the terminal, is released. Spend Automaton is coming soon.">
     <meta property="og:image" content="https://nationalautomaton.com/og.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
@@ -21,7 +21,7 @@
     <meta property="og:image:alt" content="National Automaton logo: gold magnetic-core memory rings on black.">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="National Automaton — Dependable automatons for the modern enterprise">
-    <meta name="twitter:description" content="Production AI agents for the enterprise, with guardrails, human approval, and audit trails. Spend Automaton, an AI FinOps agent, is coming soon.">
+    <meta name="twitter:description" content="Production AI agents for the enterprise, with guardrails, human approval, and audit trails. Code Automaton, an open-source coding agent for the terminal, is released. Spend Automaton is coming soon.">
     <meta name="twitter:image" content="https://nationalautomaton.com/og.jpg">
     <meta name="twitter:image:alt" content="National Automaton logo: gold magnetic-core memory rings on black.">
     <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -40,7 +40,22 @@
         "url": "https://nationalautomaton.com/",
         "email": "info@nationalautomaton.com",
         "sameAs": "https://github.com/National-Automaton",
-        "description": "Production AI agents for the enterprise, with guardrails, human approval, and audit trails."
+        "description": "Production AI agents for the enterprise, with guardrails, human approval, and audit trails.",
+        "owns": {
+          "@type": "SoftwareApplication",
+          "name": "Code Automaton",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "macOS, Linux, Windows (WSL)",
+          "softwareVersion": "1.3.0",
+          "url": "https://github.com/National-Automaton/code-automaton",
+          "installUrl": "https://www.npmjs.com/package/code-automaton",
+          "license": "https://opensource.org/licenses/MIT",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        }
       }
     </script>
   </head>
@@ -61,6 +76,7 @@
           </a>
           <nav class="site-nav" aria-label="Primary">
             <a href="#work">What we build</a>
+            <a href="#code-automaton">Code Automaton</a>
             <a href="#spend-automaton">Spend Automaton</a>
             <a href="#approach">Approach</a>
             <a href="#about">About</a>
@@ -148,10 +164,78 @@
         </div>
       </section>
 
+      <section class="section code-automaton" id="code-automaton" aria-labelledby="code-automaton-title">
+        <div class="wrap code-automaton-grid">
+          <div>
+            <p class="kicker">Open source · Released</p>
+            <h2 id="code-automaton-title">Code Automaton</h2>
+            <p class="lede">An agentic coding tool for the terminal. It runs against any OpenAI-compatible API — DeepSeek by default — and keeps several live sessions open at once. Switch to another session while a long turn runs and the reply keeps accumulating in the background; switch back and it is there.</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://www.npmjs.com/package/code-automaton" rel="noopener noreferrer">Install from npm<span class="visually-hidden"> (opens in a new tab)</span></a>
+              <a class="btn btn-ghost" href="https://github.com/National-Automaton/code-automaton" rel="noopener noreferrer">Source on GitHub<span class="visually-hidden"> (opens in a new tab)</span></a>
+            </div>
+            <div class="install">
+              <p class="install-label">Install</p>
+              <pre><code>npm install -g code-automaton
+coda --version</code></pre>
+              <p class="install-note">The package is <code>code-automaton</code>; the command is <code>coda</code>. You supply an API key in <code>CODA_API_KEY</code>.</p>
+            </div>
+          </div>
+          <dl class="spec">
+            <div class="spec-inner">
+              <div>
+                <dt>Job</dt>
+                <dd>Agentic coding, in the terminal</dd>
+              </div>
+              <div>
+                <dt>Sessions</dt>
+                <dd>Several live at once, each streaming on its own</dd>
+              </div>
+              <div>
+                <dt>Steering</dt>
+                <dd>Fold a message into a turn while it runs</dd>
+              </div>
+              <div>
+                <dt>Models</dt>
+                <dd>Any OpenAI-compatible API; DeepSeek by default</dd>
+              </div>
+              <div>
+                <dt>License</dt>
+                <dd>MIT</dd>
+              </div>
+              <div>
+                <dt>Version</dt>
+                <dd>1.3.0</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Released</dd>
+              </div>
+            </div>
+          </dl>
+        </div>
+        <div class="wrap">
+          <div class="cards code-cards">
+            <article class="card">
+              <h3>Session recall</h3>
+              <p>Sessions are saved as JSON and reloaded the next time you start. A session names itself after its first message and can be renamed from the picker.</p>
+            </article>
+            <article class="card">
+              <h3>Images</h3>
+              <p>Attach a screenshot with <code>/image</code> or the clipboard and the model can reason about it. Image messages route to a separate vision model, so a text-only setup keeps working.</p>
+            </article>
+            <article class="card">
+              <h3>Tools</h3>
+              <p>Read, write, and edit files, list directories, and run shell commands — a small, readable tool set in a framework you can run from source.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section class="section spend-automaton" id="spend-automaton" aria-labelledby="spend-automaton-title">
         <div class="wrap spend-automaton-grid">
           <div>
-            <p class="kicker">First product</p>
+            <p class="kicker">Open core · Coming soon</p>
             <h2 id="spend-automaton-title">Spend Automaton</h2>
             <p class="lede">An AI FinOps agent. It detects cloud cost anomalies, explains the root cause in plain English, and opens a ticket with a proposed fix. A person approves the fix before anything changes.</p>
           </div>

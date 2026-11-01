@@ -3,27 +3,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>National Automaton — Dependable automatons for the modern enterprise</title>
-    <meta name="description" content="Production AI agents for the enterprise, with guardrails, human approval, and audit trails. Code Automaton, an open-source coding agent for the terminal, is released. Spend Automaton is coming soon.">
+    <title>Michael Davis — Open-source AI tools</title>
+    <meta name="description" content="Open-source AI tools by Michael Davis. Code Automaton is a terminal coding agent that runs several sessions at once against any OpenAI-compatible model — free and MIT-licensed.">
     <meta name="theme-color" content="#000000">
     <meta name="color-scheme" content="light">
     <link rel="canonical" href="https://nationalautomaton.com/">
-    <meta property="og:site_name" content="National Automaton">
+    <meta property="og:site_name" content="Michael Davis">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
     <meta property="og:url" content="https://nationalautomaton.com/">
-    <meta property="og:title" content="National Automaton — Dependable automatons for the modern enterprise">
-    <meta property="og:description" content="Production AI agents for the enterprise, with guardrails, human approval, and audit trails. Code Automaton, an open-source coding agent for the terminal, is released. Spend Automaton is coming soon.">
+    <meta property="og:title" content="Michael Davis — Open-source AI tools">
+    <meta property="og:description" content="Open-source AI tools by Michael Davis. Code Automaton is a terminal coding agent that runs several sessions at once against any OpenAI-compatible model — free and MIT-licensed.">
     <meta property="og:image" content="https://nationalautomaton.com/og.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="National Automaton logo: gold magnetic-core memory rings on black.">
+    <meta property="og:image:alt" content="Gold magnetic-core memory rings on black.">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="National Automaton — Dependable automatons for the modern enterprise">
-    <meta name="twitter:description" content="Production AI agents for the enterprise, with guardrails, human approval, and audit trails. Code Automaton, an open-source coding agent for the terminal, is released. Spend Automaton is coming soon.">
+    <meta name="twitter:title" content="Michael Davis — Open-source AI tools">
+    <meta name="twitter:description" content="Open-source AI tools by Michael Davis. Code Automaton is a terminal coding agent that runs several sessions at once against any OpenAI-compatible model — free and MIT-licensed.">
     <meta name="twitter:image" content="https://nationalautomaton.com/og.jpg">
-    <meta name="twitter:image:alt" content="National Automaton logo: gold magnetic-core memory rings on black.">
+    <meta name="twitter:image:alt" content="Gold magnetic-core memory rings on black.">
     <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -35,12 +35,15 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "National Automaton",
+        "@type": "Person",
+        "name": "Michael Davis",
         "url": "https://nationalautomaton.com/",
         "email": "info@nationalautomaton.com",
-        "sameAs": "https://github.com/National-Automaton",
-        "description": "Production AI agents for the enterprise, with guardrails, human approval, and audit trails.",
+        "description": "Infrastructure, cloud, and FinOps engineer. Publishes open-source AI tooling under the National Automaton label.",
+        "sameAs": [
+          "https://github.com/National-Automaton",
+          "https://www.linkedin.com/in/michaeldavis-cloud"
+        ],
         "owns": {
           "@type": "SoftwareApplication",
           "name": "Code Automaton",
@@ -50,10 +53,9 @@
           "url": "https://github.com/National-Automaton/code-automaton",
           "installUrl": "https://www.npmjs.com/package/code-automaton",
           "license": "https://opensource.org/licenses/MIT",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD"
+          "author": {
+            "@type": "Person",
+            "name": "Michael Davis"
           }
         }
       }
@@ -65,7 +67,7 @@
       <div class="mast">
         <p class="wrap mast-inner">
           <span>National Automaton</span>
-          <span>Production AI agents</span>
+          <span>Open-source projects by Michael Davis</span>
         </p>
       </div>
       <div class="navbar">
@@ -75,10 +77,9 @@
             <span class="brand-name">National Automaton</span>
           </a>
           <nav class="site-nav" aria-label="Primary">
-            <a href="#work">What we build</a>
             <a href="#code-automaton">Code Automaton</a>
-            <a href="#spend-automaton">Spend Automaton</a>
-            <a href="#approach">Approach</a>
+            <a href="#why">Why I built it</a>
+            <a href="#roadmap">Roadmap</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
           </nav>
@@ -92,75 +93,51 @@
           <img class="hero-logo" src="/assets/logo-web.jpg" srcset="/assets/logo-web.jpg 800w, /assets/logo.jpg 1024w" sizes="(min-width: 880px) 440px, 86vw" width="800" height="800" alt="National Automaton">
           <div class="hero-side">
           <div class="hero-copy">
-            <p class="kicker">Production AI agents</p>
-            <h1 id="hero-title">Dependable automatons for the modern enterprise.</h1>
-            <p class="lede">AI agents built to take a defined job inside a company — with guardrails, a person to approve consequential actions, and an audit trail of the work.</p>
+            <p class="kicker">Open source · MIT licensed</p>
+            <h1 id="hero-title">Code Automaton — an open-source coding agent for your terminal.</h1>
+            <p class="lede">I built Code Automaton to run several AI coding sessions side by side in one terminal, with any OpenAI-compatible model. It is free and MIT-licensed.</p>
+            <div class="install install-hero">
+              <pre><code>npm install -g code-automaton</code></pre>
+            </div>
             <div class="actions">
-              <a class="btn btn-primary" href="#contact">Write to us</a>
-              <a class="btn btn-ghost" href="https://github.com/National-Automaton" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a>
+              <a class="btn btn-primary" href="https://github.com/National-Automaton/code-automaton" rel="noopener noreferrer">View on GitHub<span class="visually-hidden"> (opens in a new tab)</span></a>
+              <a class="btn btn-ghost" href="https://www.npmjs.com/package/code-automaton" rel="noopener noreferrer">npm<span class="visually-hidden"> (opens in a new tab)</span></a>
             </div>
           </div>
-          <aside class="plate" aria-labelledby="plate-title">
-            <div class="plate-inner">
-              <p class="kicker">The standard</p>
-              <p class="plate-title" id="plate-title">Built for production</p>
-              <ol class="standards">
-                <li>
-                  <span class="num">01</span>
-                  <span>
-                    <strong>Guardrails</strong>
-                    <span>A bounded job.</span>
-                  </span>
-                </li>
-                <li>
-                  <span class="num">02</span>
-                  <span>
-                    <strong>Human approval</strong>
-                    <span>A person decides.</span>
-                  </span>
-                </li>
-                <li>
-                  <span class="num">03</span>
-                  <span>
-                    <strong>Audit trail</strong>
-                    <span>A record of the work.</span>
-                  </span>
-                </li>
-              </ol>
-            </div>
-          </aside>
           </div>
         </div>
       </section>
 
-      <section class="section" id="work" aria-labelledby="work-title">
+      <section class="section" id="features" aria-labelledby="features-title">
         <div class="wrap">
-          <h2 id="work-title">What we build</h2>
-          <p class="lede">Each agent is scoped to a task, kept inside that scope, and tied into the systems a company already uses.</p>
+          <h2 id="features-title">What it does</h2>
+          <p class="lede">A small, readable tool with the features I actually wanted day to day.</p>
           <div class="cards">
             <article class="card">
-              <h3>Guardrails</h3>
-              <p>You set the systems an agent may touch and the actions it may propose. Outside that brief, it stops.</p>
+              <h3>Several live sessions</h3>
+              <p>Each streams on its own. Switch away while a long turn runs and the reply keeps arriving in the background.</p>
             </article>
             <article class="card">
-              <h3>Human approval</h3>
-              <p>The agent prepares a consequential step and waits. A person reviews the proposal, and the change goes forward only with that approval.</p>
+              <h3>Session recall</h3>
+              <p>Sessions are saved locally as JSON and come back the next time you start. They name themselves from the first message and can be renamed.</p>
             </article>
             <article class="card">
-              <h3>Audit trails</h3>
-              <p>Every run leaves a record a reviewer can read: what the agent looked at, what it concluded, and what it asked to do.</p>
+              <h3>Steer mid-turn</h3>
+              <p>Type while the agent works and your message is folded into the running turn, typically between tool calls.</p>
+            </article>
+            <article class="card">
+              <h3>Screenshots</h3>
+              <p>Attach an image with <code>/image</code> or the clipboard. Image messages go to a separate, configurable vision model.</p>
+            </article>
+            <article class="card">
+              <h3>Any OpenAI-compatible API</h3>
+              <p>DeepSeek by default; set <code>CODA_BASE_URL</code> and <code>CODA_MODEL</code> for others.</p>
+            </article>
+            <article class="card">
+              <h3>Small and readable</h3>
+              <p>TypeScript, two runtime dependencies, five tools: read, write, edit, list, and shell.</p>
             </article>
           </div>
-          <div class="systems">
-            <p class="systems-label">Integrates with</p>
-            <ul class="system-list">
-              <li>Jira</li>
-              <li>ServiceNow</li>
-              <li>Slack</li>
-              <li>Email</li>
-            </ul>
-          </div>
-          <p class="systems-note">Ticketing, chat, and mail — including Jira and ServiceNow — so the agent meets the request where it already is.</p>
         </div>
       </section>
 
@@ -232,68 +209,35 @@ coda --version</code></pre>
         </div>
       </section>
 
-      <section class="section spend-automaton" id="spend-automaton" aria-labelledby="spend-automaton-title">
-        <div class="wrap spend-automaton-grid">
-          <div>
-            <p class="kicker">Open core · Coming soon</p>
-            <h2 id="spend-automaton-title">Spend Automaton</h2>
-            <p class="lede">An AI FinOps agent. It detects cloud cost anomalies, explains the root cause in plain English, and opens a ticket with a proposed fix. A person approves the fix before anything changes.</p>
-          </div>
-          <dl class="spec">
-            <div class="spec-inner">
-              <div>
-                <dt>Job</dt>
-                <dd>Cloud cost anomalies</dd>
-              </div>
-              <div>
-                <dt>Explains</dt>
-                <dd>The likely root cause, in plain English</dd>
-              </div>
-              <div>
-                <dt>Opens</dt>
-                <dd>A ticket with a proposed fix</dd>
-              </div>
-              <div>
-                <dt>Control</dt>
-                <dd>A person approves before anything changes</dd>
-              </div>
-              <div>
-                <dt>Model</dt>
-                <dd>Open core</dd>
-              </div>
-              <div>
-                <dt>Status</dt>
-                <dd>Coming soon</dd>
-              </div>
-            </div>
-          </dl>
+      <section class="section" id="why" aria-labelledby="why-title">
+        <div class="wrap">
+          <h2 id="why-title">Why I built it</h2>
+          <p class="about-blurb">I wanted a terminal coding agent that worked the way I do: several conversations at once, nothing lost when I close the terminal, and the ability to redirect a task without waiting for it to finish. Building one myself was also the best way to learn how agent loops, tool calling, and terminal UIs actually work.</p>
         </div>
       </section>
 
-      <section class="section" id="approach" aria-labelledby="approach-title">
+      <section class="section" id="roadmap" aria-labelledby="roadmap-title">
         <div class="wrap">
-          <h2 id="approach-title">Approach</h2>
-          <p class="lede">Open core. The agent framework and MCP tools are open source. Hosted operation, enterprise connectors, and support are paid.</p>
-          <div class="split">
-            <article>
-              <p class="kicker">Open source</p>
-              <h3>Framework and MCP tools</h3>
-              <p>The agent framework and the MCP tools are the open-source half: readable, runnable, and open to extension.</p>
+          <h2 id="roadmap-title">Roadmap and ideas</h2>
+          <p class="lede">Ideas I am exploring. None of these are available today.</p>
+          <div class="cards">
+            <article class="card">
+              <h3>Spend Automaton</h3>
+              <p>An experiment in an AI FinOps assistant: it would flag cloud cost anomalies, explain the likely cause, and propose a fix for a person to approve. Not yet built.</p>
             </article>
-            <article>
-              <p class="kicker">Paid</p>
-              <h3>Hosted and supported</h3>
-              <p>Hosted operation, connectors for enterprise systems, and support for teams that want the agents run with them.</p>
+            <article class="card">
+              <h3>Connectors</h3>
+              <p>Connectors to ticketing and chat tools, so an agent could meet a request where it already is.</p>
             </article>
           </div>
-          <p class="footnote">The framework and tools can be read and run without the hosted service.</p>
         </div>
       </section>
 
       <section class="section" id="about" aria-labelledby="about-title">
         <div class="wrap">
           <h2 id="about-title">About</h2>
-          <p class="about-blurb">National Automaton builds production AI agents for the enterprise. The name nods to the <span class="name">National Automaton Co.</span>, a coin-operated automaton maker in Ohio in 1893. That is inspiration — a machine built to do one job and keep doing it — and this company claims no lineage from that firm.</p>
+          <p class="about-blurb">I am Michael Davis, an infrastructure engineer with 25+ years in infrastructure, cloud, and FinOps, an AWS Certified Solutions Architect &ndash; Professional, and a U.S. Navy veteran. <span class="name">National Automaton</span> is where I publish my open-source AI tooling. The name nods to the National Automaton Co., an 1893 Ohio maker of coin-operated automatons; there is no connection to that firm.</p>
+          <p class="about-links"><a href="https://www.linkedin.com/in/michaeldavis-cloud" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a> &middot; <a href="https://github.com/National-Automaton" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a></p>
         </div>
       </section>
 
@@ -301,13 +245,15 @@ coda --version</code></pre>
         <div class="wrap contact-grid">
           <div>
             <h2 id="contact-title">Contact</h2>
-            <p class="lede">For the agents, the open-source work, or Spend Automaton.</p>
+            <p class="lede">Feedback and bug reports are welcome.</p>
           </div>
           <address class="letter">
             <div class="letter-inner">
-              <p class="kicker">Correspondence</p>
+              <p class="kicker">Get in touch</p>
+              <p class="letter-label">Bug reports</p>
+              <p><a class="github" href="https://github.com/National-Automaton/code-automaton/issues" rel="noopener noreferrer">Open an issue<span class="visually-hidden"> (opens in a new tab)</span></a></p>
               <p><a class="mail" href="mailto:info@nationalautomaton.com">info@nationalautomaton.com</a></p>
-              <p class="letter-label">GitHub</p>
+              <p class="letter-label">Organisation</p>
               <p><a class="github" href="https://github.com/National-Automaton" rel="noopener noreferrer">github.com/National-Automaton<span class="visually-hidden"> (opens in a new tab)</span></a></p>
             </div>
           </address>
@@ -319,7 +265,7 @@ coda --version</code></pre>
       <div class="wrap footer-inner">
         <div>
           <p class="footer-name">National Automaton</p>
-          <p class="footer-tag">Production AI agents for the enterprise.</p>
+          <p class="footer-tag">Open-source AI tools by Michael Davis.</p>
         </div>
         <div class="footer-links">
           <a href="mailto:info@nationalautomaton.com">info@nationalautomaton.com</a>

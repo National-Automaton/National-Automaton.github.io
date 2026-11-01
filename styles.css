@@ -241,19 +241,12 @@ a {
 }
 
 .hero h1,
-.hero .plate-title,
-.hero .standards strong {
-  color: var(--paper);
-}
 
 .hero h1 {
   font-size: clamp(2.05rem, 3.5vw, 3.35rem);
 }
 
 .hero .lede,
-.hero .standards span span {
-  color: #e4dccb;
-}
 
 .hero .kicker,
 .hero .num {
@@ -282,16 +275,6 @@ a {
   color: var(--brass-bright);
 }
 
-.hero .plate,
-.hero .plate-inner {
-  border-color: var(--brass-frame);
-  background: var(--black);
-}
-
-.hero .standards li {
-  border-color: rgba(212, 176, 106, 0.35);
-}
-
 .kicker {
   margin: 0 0 0.7rem;
   color: var(--brass);
@@ -304,12 +287,6 @@ a {
 h1,
 h2,
 h3,
-.plate-title {
-  font-family: var(--serif);
-  font-weight: 600;
-  color: var(--navy);
-  text-wrap: balance;
-}
 
 h1 {
   margin: 0;
@@ -368,60 +345,11 @@ h1 {
   color: var(--brass);
 }
 
-.plate {
-  border: 1px solid var(--brass-frame);
-  padding: 0.4rem;
-  background: var(--paper);
-}
-
-.plate-inner {
-  border: 1px solid var(--brass-frame);
-  background: var(--paper-raised);
-  padding: 1.15rem 1.15rem 0.4rem;
-}
-
-.plate-title {
-  margin: 0;
-  font-size: 1.55rem;
-  letter-spacing: -0.015em;
-  line-height: 1.15;
-}
-
-.standards {
-  list-style: none;
-  margin: 0.85rem 0 0;
-  padding: 0;
-}
-
-.standards li {
-  display: grid;
-  grid-template-columns: 2.1rem 1fr;
-  gap: 0.55rem;
-  align-items: baseline;
-  padding: 0.72rem 0;
-  border-top: 1px solid var(--line);
-}
-
-.standards li:last-child {
-  border-bottom: 1px solid var(--line);
-}
-
 .num {
   font-family: var(--serif);
   font-weight: 600;
   color: var(--brass);
   font-size: 0.95rem;
-}
-
-.standards strong {
-  display: block;
-  color: var(--navy);
-  font-weight: 600;
-}
-
-.standards span span,
-.quiet {
-  color: var(--muted);
 }
 
 /* Sections */
@@ -458,55 +386,41 @@ h2 {
 }
 
 .card p,
-.split p,
 .note {
   margin: 0;
   color: var(--muted);
 }
 
-.systems {
-  display: grid;
-  gap: 0.7rem;
-  margin-top: 2.25rem;
-  padding: 1rem 0;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+/* Hero install line */
+
+.install-hero {
+  margin: 1.5rem 0 0;
+  max-width: 32rem;
 }
 
-.systems-label {
+.install-hero pre {
   margin: 0;
-  color: var(--brass);
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  padding: 0.9rem 1rem;
+  overflow-x: auto;
+  background: var(--black);
+  border: 1px solid rgba(198, 161, 94, 0.75);
+  color: var(--brass-bright);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.92rem;
+  line-height: 1.55;
 }
 
-.system-list {
+/* About links */
+
+.about-links {
+  margin: 1.25rem 0 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem 0;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  gap: 0.5rem 1.25rem;
 }
 
-.system-list li {
-  color: var(--navy);
+.about-links a {
   font-weight: 600;
-  padding: 0.15rem 0.95rem;
-  border-left: 1px solid var(--line);
-}
-
-.system-list li:first-child {
-  padding-left: 0;
-  border-left: 0;
-}
-
-.systems-note {
-  margin: 0.75rem 0 0;
-  color: var(--muted);
-  max-width: 42rem;
 }
 
 /* Code Automaton */
@@ -531,7 +445,8 @@ h2 {
   text-transform: uppercase;
 }
 
-.code-automaton pre {
+.code-automaton pre,
+.install-hero pre {
   margin: 0;
   padding: 0.9rem 1rem;
   overflow-x: auto;
@@ -543,7 +458,8 @@ h2 {
   line-height: 1.55;
 }
 
-.code-automaton pre code {
+.code-automaton pre code,
+.install-hero pre code {
   font: inherit;
 }
 
@@ -588,33 +504,6 @@ h2 {
 
 /* Spend Automaton */
 
-.spend-automaton {
-  background: var(--black);
-  color: var(--paper);
-  border-top: 0;
-}
-
-.spend-automaton h2,
-.spend-automaton .plate-title {
-  color: var(--paper);
-}
-
-.spend-automaton .kicker,
-.spend-automaton .spec dt {
-  color: var(--brass-bright);
-}
-
-.spend-automaton .lede,
-.spend-automaton .spec dd {
-  color: var(--paper);
-}
-
-.spend-automaton-grid {
-  display: grid;
-  gap: 2rem;
-  align-items: start;
-}
-
 .spec {
   margin: 0;
   border: 1px solid rgba(198, 161, 94, 0.75);
@@ -650,24 +539,6 @@ h2 {
 }
 
 /* Approach, about, contact */
-
-.split {
-  display: grid;
-  gap: 1rem;
-  margin-top: 1.75rem;
-}
-
-.split article {
-  border: 1px solid var(--line);
-  background: rgba(255, 252, 246, 0.45);
-  padding: 1.25rem 1.2rem 1.35rem;
-}
-
-.split h3 {
-  margin: 0 0 0.45rem;
-  font-size: 1.45rem;
-  letter-spacing: -0.015em;
-}
 
 .footnote {
   margin: 1.25rem 0 0;
@@ -820,14 +691,7 @@ h2 {
 /* Wider layouts */
 
 @media (min-width: 720px) {
-  .systems {
-    grid-template-columns: 11rem 1fr;
-    align-items: center;
-    column-gap: 1rem;
-  }
-
-  .contact-grid,
-  .split {
+  .contact-grid {
     grid-template-columns: 1fr 1fr;
     gap: 1.25rem;
   }
@@ -863,7 +727,6 @@ h2 {
     gap: 1.75rem;
   }
 
-  .spend-automaton-grid,
   .code-automaton-grid {
     grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
     gap: 3.25rem;
@@ -910,11 +773,10 @@ h2 {
 
 @media (forced-colors: active) {
   .btn,
-  .plate,
   .letter,
   .spec,
-  .split article,
-  .code-automaton pre {
+  .code-automaton pre,
+  .install-hero pre {
     border: 1px solid ButtonText;
   }
 }
@@ -930,7 +792,6 @@ h2 {
     display: none;
   }
 
-  .spend-automaton,
   .site-footer,
   .mast,
   .code-automaton pre {
@@ -938,9 +799,6 @@ h2 {
     color: black;
   }
 
-  .spend-automaton h2,
-  .spend-automaton .lede,
-  .spend-automaton .spec dd,
   .footer-name,
   .footer-links a {
     color: black;

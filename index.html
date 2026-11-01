@@ -49,7 +49,7 @@
           "name": "Code Automaton",
           "applicationCategory": "DeveloperApplication",
           "operatingSystem": "macOS, Linux, Windows (WSL)",
-          "softwareVersion": "1.3.1",
+          "softwareVersion": "1.4.0",
           "url": "https://github.com/National-Automaton/code-automaton",
           "installUrl": "https://www.npmjs.com/package/code-automaton",
           "license": "https://opensource.org/licenses/MIT",
@@ -118,10 +118,6 @@
               <p>Each streams on its own. Switch away while a long turn runs and the reply keeps arriving in the background.</p>
             </article>
             <article class="card">
-              <h3>Session recall</h3>
-              <p>Sessions are saved locally as JSON and come back the next time you start. They name themselves from the first message and can be renamed.</p>
-            </article>
-            <article class="card">
               <h3>Steer mid-turn</h3>
               <p>Type while the agent works and your message is folded into the running turn, typically between tool calls.</p>
             </article>
@@ -132,6 +128,10 @@
             <article class="card">
               <h3>Any OpenAI-compatible API</h3>
               <p>DeepSeek by default; set <code>CODA_BASE_URL</code> and <code>CODA_MODEL</code> for others.</p>
+            </article>
+            <article class="card">
+              <h3>Scrollback that holds</h3>
+              <p>The session keeps its history: the mouse wheel or Shift+PgUp scrolls back through it, and the last frame stays in your terminal after you exit.</p>
             </article>
             <article class="card">
               <h3>Small and readable</h3>
@@ -173,6 +173,10 @@ coda --version</code></pre>
                 <dd>Fold a message into a turn while it runs</dd>
               </div>
               <div>
+                <dt>Scrolling</dt>
+                <dd>Mouse wheel and Shift+PgUp through the session's history</dd>
+              </div>
+              <div>
                 <dt>Models</dt>
                 <dd>Any OpenAI-compatible API; DeepSeek by default</dd>
               </div>
@@ -182,7 +186,7 @@ coda --version</code></pre>
               </div>
               <div>
                 <dt>Version</dt>
-                <dd>1.3.1</dd>
+                <dd>1.4.0</dd>
               </div>
               <div>
                 <dt>Status</dt>
@@ -202,8 +206,8 @@ coda --version</code></pre>
               <p>Attach a screenshot with <code>/image</code> or the clipboard and the model can reason about it. Image messages route to a separate vision model, so a text-only setup keeps working.</p>
             </article>
             <article class="card">
-              <h3>Tools</h3>
-              <p>Read, write, and edit files, list directories, and run shell commands — a small, readable tool set in a framework you can run from source.</p>
+              <h3>Tools and commands</h3>
+              <p>Read, write, and edit files, list directories, and run shell commands — a small, readable tool set. Slash commands cover <code>/image</code>, <code>/paste</code>, and <code>/quit</code>.</p>
             </article>
           </div>
         </div>

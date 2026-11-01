@@ -1,6 +1,11 @@
 # National Automaton
 
-Static landing page for National Automaton. Plain HTML and CSS, no build step, meant for GitHub Pages.
+Static personal portfolio for Michael Davis. Plain HTML and CSS, no build step, meant for GitHub Pages.
+
+The page presents Code Automaton as one engineer's open-source work, not as a company
+selling services. Keep it that way: no pricing, no "coming soon" product promises, no
+enterprise-sales framing, and no integrations the repo does not actually ship. See
+"Positioning" below.
 
 The name is **Automaton**, not Automation.
 
@@ -78,9 +83,21 @@ Forward `nationalautomaton.ai` (and `www.nationalautomaton.ai`, if you use it) t
 
 ## Product sections
 
-`index.html` has a section per product, in the order they appear and are anchored in the nav: `#code-automaton`, then `#spend-automaton`. Both are also linked from `404.html`, so add or rename an anchor in both files.
+`index.html` sections, in page order and anchored in the nav: `#code-automaton`, `#features`, `#why`, `#roadmap`, `#about`, `#contact`. `404.html` repeats the nav, so add or rename an anchor in both files.
 
-The Code Automaton section states facts that live outside this repository (npm package name `code-automaton`, command `coda`, version, MIT license). When a release bumps the version, update the `Version` row in the `.spec` list and `softwareVersion` in the JSON-LD together. `npm view code-automaton version` is the authority; the top-level registry document can lag, so prefer the per-version endpoint.
+The Code Automaton section states facts that live outside this repository (npm package name `code-automaton`, command `coda`, version, MIT license). When a release bumps the version, update the `Version` row in the `.spec` list and `softwareVersion` in the JSON-LD together.
+
+## Positioning
+
+The page is written in the first person and names Michael. It deliberately omits:
+
+- pricing, "open core", or paid tiers;
+- Spend Automaton as a product — it appears only under "Roadmap and ideas", labeled as not built;
+- ticketing/chat/email integrations, which do not exist in the repo.
+
+Do not add claims that cannot be verified from the code: no usage or adoption numbers, no
+"built with <tool>" statements, no integration or partnership claims. `#why` and `#about`
+carry claims only Michael can confirm; check with him before editing them. `npm view code-automaton version` is the authority; the top-level registry document can lag, so prefer the per-version endpoint.
 
 ## Contact address
 

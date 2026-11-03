@@ -391,6 +391,76 @@ h2 {
   color: var(--muted);
 }
 
+/* Demo video */
+
+.video {
+  margin-top: 2rem;
+}
+
+.video-facade {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 2px solid var(--brass-line);
+  border-radius: 4px;
+  background: var(--navy-deep);
+  cursor: pointer;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.video-poster {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4.5rem;
+  height: 4.5rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgba(12, 11, 10, 0.72);
+  border: 2px solid var(--brass-bright);
+}
+
+.video-play::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 0.8rem 0 0.8rem 1.3rem;
+  border-color: transparent transparent transparent var(--brass-bright);
+}
+
+.video-facade:hover .video-play,
+.video-facade:focus-visible .video-play {
+  background: rgba(12, 11, 10, 0.9);
+}
+
+.video iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 4px;
+  background: var(--navy-deep);
+}
+
+.video-note {
+  margin: 0.65rem 0 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
 /* Hero install line */
 
 .install-hero {

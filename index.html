@@ -78,6 +78,7 @@
           </a>
           <nav class="site-nav" aria-label="Primary">
             <a href="#code-automaton">Code Automaton</a>
+            <a href="#demo">Demo</a>
             <a href="#why">Why I built it</a>
             <a href="#roadmap">Roadmap</a>
             <a href="#about">About</a>
@@ -137,6 +138,20 @@
               <h3>Small and readable</h3>
               <p>TypeScript, two runtime dependencies, five tools: read, write, edit, list, and shell.</p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="demo" aria-labelledby="demo-title">
+        <div class="wrap">
+          <h2 id="demo-title">See it in action</h2>
+          <p class="lede">A short screencast of Code Automaton in a terminal: several live sessions, steering a turn while it runs, and scrolling back through the session history.</p>
+          <div class="video">
+            <button class="video-facade" type="button" data-video="13_kBAKTZeQ" aria-label="Play the Code Automaton demo video">
+              <img class="video-poster" src="https://i.ytimg.com/vi/13_kBAKTZeQ/maxresdefault.jpg" width="1280" height="720" alt="" loading="lazy" decoding="async">
+              <span class="video-play" aria-hidden="true"></span>
+            </button>
+            <p class="video-note">Video on YouTube. Playing it loads an embedded player from <code>youtube-nocookie.com</code>.</p>
           </div>
         </div>
       </section>
@@ -278,5 +293,20 @@ coda --version</code></pre>
       </div>
       <p class="wrap footer-copy">© 2026 National Automaton</p>
     </footer>
+    <script>
+      document.querySelectorAll(".video-facade").forEach(function (facade) {
+        facade.addEventListener("click", function () {
+          var id = facade.getAttribute("data-video");
+          var iframe = document.createElement("iframe");
+          iframe.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0";
+          iframe.title = "Code Automaton demo video";
+          iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+          iframe.referrerPolicy = "strict-origin-when-cross-origin";
+          iframe.allowFullscreen = true;
+          facade.replaceWith(iframe);
+          iframe.focus();
+        });
+      });
+    </script>
   </body>
 </html>

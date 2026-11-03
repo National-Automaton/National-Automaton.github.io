@@ -83,9 +83,17 @@ Forward `nationalautomaton.ai` (and `www.nationalautomaton.ai`, if you use it) t
 
 ## Product sections
 
-`index.html` sections, in page order and anchored in the nav: `#code-automaton`, `#features`, `#why`, `#roadmap`, `#about`, `#contact`. `404.html` repeats the nav, so add or rename an anchor in both files.
+`index.html` sections, in page order and anchored in the nav: `#code-automaton`, `#demo`, `#features`, `#why`, `#roadmap`, `#about`, `#contact`. `404.html` repeats the nav, so add or rename an anchor in both files.
 
 The Code Automaton section states facts that live outside this repository (npm package name `code-automaton`, command `coda`, version, MIT license). When a release bumps the version, update the `Version` row in the `.spec` list and `softwareVersion` in the JSON-LD together.
+
+## Demo video
+
+`#demo` embeds a YouTube screencast of Code Automaton. It is a click-to-load facade: the page ships only the thumbnail from `i.ytimg.com`, and the `<iframe>` is injected from `www.youtube-nocookie.com` when the visitor presses play. Keep it that way — do not replace it with an autoloading iframe, which would add a third-party request to every page view.
+
+The video ID is written out twice — `data-video` on `.video-facade` and the `video-poster` `src` — and the inline script builds the embed URL from `data-video`. To change the demo, update both and keep `data-video` authoritative for the player. The thumbnail uses `maxresdefault.jpg`, which only exists for videos uploaded at 1280×720 or larger; if a replacement video lacks it, fall back to `hqdefault.jpg` and drop the `width`/`height` attributes.
+
+The video is a recording of a specific release (its YouTube title names the version), so it can lag the `Version` row. Leave the copy describing features rather than claiming it shows the current release.
 
 ## Positioning
 

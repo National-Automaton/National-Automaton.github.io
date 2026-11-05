@@ -397,6 +397,13 @@ h2 {
   margin-top: 2rem;
 }
 
+/* The embedded player picks its start quality partly from its rendered size,
+   so the demo gets a wider column than the default .wrap. See README. */
+
+.wrap.video-wide {
+  width: min(1280px, calc(100% - 2.5rem));
+}
+
 .video-facade {
   position: relative;
   display: block;
@@ -811,7 +818,8 @@ h2 {
 }
 
 @media (max-width: 420px) {
-  .wrap {
+  .wrap,
+  .wrap.video-wide {
     width: min(var(--wrap), calc(100% - 1.75rem));
   }
 

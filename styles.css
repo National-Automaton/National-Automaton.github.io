@@ -468,6 +468,22 @@ h2 {
   color: var(--muted);
 }
 
+/* The embed's own quality control is unreliable, so this link is the
+   supported way a viewer reaches the full player. Keep it looking actionable. */
+
+.video-note a {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--brass-line);
+  text-underline-offset: 2px;
+}
+
+.video-note a:hover {
+  color: var(--brass);
+  text-decoration-color: var(--brass);
+}
+
 /* Hero install line */
 
 .install-hero {

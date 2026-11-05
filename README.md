@@ -104,6 +104,8 @@ The embedded player chooses its starting resolution adaptively, from the player'
 
 Neither is a guarantee: a viewer on a slow connection or in a small window will still get a lower resolution. If an exact fixed 1080p ever becomes a requirement, the only reliable route is self-hosting the file in a `<video>` element rather than embedding YouTube.
 
+The embed is also worse than the YouTube site for this video because its quality control is hard to reach — a viewer can end up stuck at 240p with no way to raise it. The screencast is terminal text, which is unreadable at that size, so `.video-note` carries an "open it on YouTube" link, where the full player does let you pick the quality. That link is the supported escape hatch; do not remove it. (The video itself is uploaded at 1080p — YouTube offers 144p through 1080p for it — so the source is not the limitation.)
+
 ## Positioning
 
 The page is written in the first person and names Michael. It deliberately omits:

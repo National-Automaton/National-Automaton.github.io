@@ -95,6 +95,15 @@ The video ID is written out twice — `data-video` on `.video-facade` and the `v
 
 The video is a recording of a specific release (its YouTube title names the version), so it can lag the `Version` row. Leave the copy describing features rather than claiming it shows the current release.
 
+### Playback quality
+
+The embedded player chooses its starting resolution adaptively, from the player's rendered size and the viewer's bandwidth, and YouTube does not expose a supported way to lock it. The page does two things to push it toward 1080p:
+
+- `#demo` uses `.wrap.video-wide` (up to 1280px) instead of the default 1080px wrap, so the player renders larger. Player size is the biggest real factor; keep this wide rather than reusing the plain `.wrap`.
+- The embed URL appends `vq=hd1080`. This is a hint only — YouTube deprecated and may ignore it, especially alongside `autoplay=1`.
+
+Neither is a guarantee: a viewer on a slow connection or in a small window will still get a lower resolution. If an exact fixed 1080p ever becomes a requirement, the only reliable route is self-hosting the file in a `<video>` element rather than embedding YouTube.
+
 ## Positioning
 
 The page is written in the first person and names Michael. It deliberately omits:

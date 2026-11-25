@@ -1,0 +1,3 @@
+# Local helper for bumping the Code Automaton version in index.html.
+# Kept out of the published site.
+bump-version.sh
